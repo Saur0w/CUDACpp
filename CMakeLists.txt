@@ -7,7 +7,8 @@ set(CMAKE_CUDA_ARCHITECTURES 86)
 # Tell nvcc to ignore that MSVC is "too new"
 add_compile_options($<$<COMPILE_LANGUAGE:CUDA>:-allow-unsupported-compiler>)
 
-add_executable(CUDA arrayMultiplication.cu)
+add_executable(CUDA
+        Iostream.cu)
 
 
 
