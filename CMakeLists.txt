@@ -8,8 +8,7 @@ set(CMAKE_CUDA_ARCHITECTURES 86)
 add_compile_options($<$<COMPILE_LANGUAGE:CUDA>:-allow-unsupported-compiler>)
 
 add_executable(CUDA
-        evenArray.cu)
-
+        Hello.cu)
 
 
 set_target_properties(CUDA PROPERTIES

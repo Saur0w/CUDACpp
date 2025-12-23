@@ -1,5 +1,5 @@
 #include <cstdio>
-#include <cuda_runtime.h>
+#include <cuda.h>
 
 __global__ void kernel() {
     printf("Hello world");
@@ -7,6 +7,5 @@ __global__ void kernel() {
 
 int main() {
     kernel<<<1, 1>>>();
-    cudaDeviceSynchronize();
     return 0;
 }
