@@ -37,6 +37,7 @@ int main() {
     cudaDeviceSynchronize();
 
     cudaMemcpy(h_A, d_A, bytes, cudaMemcpyDeviceToHost);
+    cudaMemcpy(h_B, d_B, bytes, cudaMemcpyDeviceToHost);
 
     std::cout << "Array A: ";
     for (int i = 0; i < N; i++) {
